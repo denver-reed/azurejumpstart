@@ -1,6 +1,6 @@
 ﻿$filePath = "C:\Users\denreed"
 $Url = "https://github.com/Azure-Samples/azure-files-samples/releases/download/v0.2.4/AzFilesHybrid.zip"
-$subscriptionName = ""
+$subscriptionID = ""
 $ResourceGroupName = ""
 $StorageAccountName = "cocvdiupd"
 $SamAccountName = "cocvdiupd"
@@ -34,7 +34,7 @@ Import-Module AzFilesHybrid
 ================================
 Connect-AzAccount
 #Select the correct subscription
-Get-AzSubscription -SubscriptionName $subscriptionName | Select-AzSubscription
+Set-AzContext -Subscription $subscriptionID
 
 =====================================
 =====================================
